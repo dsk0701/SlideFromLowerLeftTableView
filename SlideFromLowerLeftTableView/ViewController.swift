@@ -35,11 +35,11 @@ class ViewController: UIViewController, UITableViewDelegate {
 extension ViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        // animateSlide(cell)
-        animateSlideFromLowerLeft(cell)
+        animateSlideFromLeft(cell)
+        // animateSlideFromLowerLeft(cell)
     }
     
-    private func animateSlide(cell: UITableViewCell) {
+    private func animateSlideFromLeft(cell: UITableViewCell) {
         // 元の Cell の位置を保存
         let originFrame = cell.frame
 
